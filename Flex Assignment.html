@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Flex</title>
+
+</head>
+<body> 
+
+
+<style>    
+
+img{
+    align-items: center;
+    width: 90%;
+}
+
+body{
+    background-color: rgb(214, 140, 169);
+}
+
+
+ul{
+    
+    list-style: none;
+    padding: 0px;
+    margin: 2px;
+}
+
+.column {
+    flex-direction: column;
+
+  
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav li a {
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    color:rgb(245, 97, 225);
+    text-decoration: none;
+
+}
+
+nav li {
+    padding: 5px 10px;
+    flex-direction: column
+
+    
+    
+}
+
+.listbackground{
+    background-color: rgb(150, 48, 116);
+}
+
+@media (min-width:768px){
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.Captiontype{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+@media (min-width:768px) {
+
+.container{
+                display:flex;
+                flex-wrap:wrap;
+                
+            }
+                
+}
+
+@media (min-width:768px) {
+
+.container >  *{
+    
+    flex-grow:1 ;
+    padding: 0px;
+    
+}
+}
+
+@media (min-width:1060px){
+    .logo{
+        
+        object-fit: contain;
+        width: 160px;
+        position: relative;
+        position: absolute;
+        left: 750px;
+        padding-bottom: 50px;
+      
+    }
+}
+
+</style>
+
+<div class="logo">
+<img src="https://www.mdpi.com/img/journals/viruses-logo.png?72c9debfea22cec2" alt="Logo">
+</div>
+
+
+<nav class="listbackground">
+<ul>
+
+        <li><a href="https://onlinedegrees.und.edu/blog/types-of-viruses/">Types of viruses</a></li>
+        <li><a href="https://my.clevelandclinic.org/health/drugs/21531-antivirals">How to treat a virus</a></li>
+        <li><a href="https://www.livescience.com/56598-deadliest-viruses-on-earth.html">Most dangerous viruses</a></li>
+        <li><a href="https://www.cdc.gov/">CDC Organization </a></li>
+
+</ul>
+</nav>
+
+
+<div class="Captiontype">
+    <div class="Column">
+        <div class="container">
+
+        <figure>
+        <img src="https://letstalkscience.ca/sites/default/files/styles/large/public/2020-03/enveloped_virus.png?itok=KbzPy33V" alt="Spherical Virus">
+        <figcaption>Example of a Spherical Model virus</figcaption>
+    </figure>
+        <figure>
+        <img src="https://letstalkscience.ca/sites/default/files/styles/large/public/2020-03/polyhedral_virus.png?itok=4Psk9Tyv" alt="Polyhedral Virus">
+        <figcaption>Example of a Polhedral Model Virus</figcaption>
+    </figure>
+    <figure>
+        <img src="https://letstalkscience.ca/sites/default/files/styles/large/public/2020-03/helical_virus.png?itok=IzUdTRC3" alt="Helical Virus">
+        <figcaption>Example of a Helica Model virus</figcaption>
+    </figure>
+        <figure>
+        <img src="https://letstalkscience.ca/sites/default/files/styles/large/public/2020-03/bacteriophage.png?itok=gdJvTFEp" alt="Bacteriophage">
+        <figcaption>Example of a Bacteriophage Model Virus</figcaption>
+        </figure>   
+        <figure>
+        <img src="https://images.fineartamerica.com/images-medium-large/7-virus-artwork-pasieka.jpg" alt="Virus art">
+        <figcaption>Concept of a Virus</figcaption>
+        </figure>
+
+</div>
+
+</body>
+</html>
