@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Grid_Assignment</title>
+</head>
+
+<body>
+<style>
+
+    body{
+        background-color: rgba(146, 146, 146, 0.815);
+    }
+
+    /*grid */
+    .grid-container{
+    
+        display: grid;
+        grid-template-columns: repeat(6, 200px);
+        grid-auto-rows: minmax(200px,auto);
+        grid-gap: 20px;
+        grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "sidebar content"
+        "footer footer"
+    }
+
+    /*items*/
+
+    .griditem1{
+	    background-color: rgb(65, 255, 230);
+        grid-area:header;
+        grid-column-start: 4;
+        grid-column-end: six;
+        border-radius: 10px;
+        text-align:left;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 100px;
+        
+       
+      
+
+	}
+    .griditem2{
+	    background-color: rgb(43, 82, 255);
+        grid-area: sidebar;
+        grid-area: content;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        border-radius: 20px;
+        text-align: center;
+        row-gap: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(185, 157, 29);
+        text-align: justify;
+        padding: 10px;
+        font-size: 70px;
+        
+	}
+
+    .griditem3{
+	    background-color: rgb(0, 100, 167);
+        grid-area: content;
+        grid-column-start: 3;
+        grid-column-end: six;
+        grid-row-start: 2;
+        border-radius: 20px;
+        text-align: center;
+        font-family: cursive;
+        
+        
+	}
+
+    .griditem4{
+	    background-color: rgb(92, 187, 255);
+        grid-area: footer;
+        grid-column-start: 1;
+        grid-column-end:span 6;
+        grid-row-start: 4;
+        border-radius: 20px;
+        text-align: center;
+        font-family: cursive;
+      
+
+	}
+    
+</style>
+
+<div class="grid-container">
+
+    <div class="grid-item griditem1">Ocean</div>
+
+    <div class="grid-item griditem2"><a href="layout 2.html"> Layout 2</a><br>
+        <a href="layout 3.html"> Layout 3</a></div>
+
+    <div class="grid-item griditem3"><p>The word ocean comes from the figure in classical antiquity, Oceanus (/oʊˈsiːənəs/; Greek: Ὠκεανός Ōkeanós,[17] pronounced [ɔːkeanós]), the elder of the Titans in classical Greek mythology. Oceanus was believed by the ancient Greeks and Romans to be the divine personification of an enormous river encircling the world.
+
+        The concept of Ōkeanós has an Indo-European connection. Greek Ōkeanós has been compared to the Vedic epithet ā-śáyāna-, predicated of the dragon Vṛtra-, who captured the cows/rivers. Related to this notion, the Okeanos is represented with a dragon-tail on some early Greek vases.[18]</p> <img src="https://i.pinimg.com/originals/80/50/ed/8050ed5bf09a012da4d0f915bdb2d0fc.jpg"> </div>
+
+    <div class="grid-item griditem4">Ocean ridges and ocean basins
+
+        World distribution of mid-oceanic ridges; USGS
+        Every ocean basin has a mid-ocean ridge, which creates a long mountain range beneath the ocean. Together they form the global mid-oceanic ridge system that features the longest mountain range in the world. The longest continuous mountain range is 65,000 km (40,000 mi). This underwater mountain range is several times longer than the longest continental mountain range--the Andes.[33]
+        
+        Oceanographers state that less than 20% of the oceans have been mapped.></div>
+    
+    
+</div>
+
+
+</div>
+</body>
+</html>
