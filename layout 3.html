@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>layout 3</title>
+</head>
+
+<body>
+<style>
+
+    body{
+        background-color: rgba(146, 146, 146, 0.815);
+    }
+
+    /*grid */
+    .grid-container{
+    
+        display: grid;
+        grid-template-columns: repeat(7, 200px);
+        grid-template-rows: 5 200px ;
+        grid-auto-rows: minmax(200px,auto);
+        grid-gap: 20px;
+      
+    }
+
+    /*items*/
+
+    .griditem1{
+	    background-color: rgb(96, 248, 90);
+        
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        border-radius: 20px;
+        text-align: center;    
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+        font-size: 60px;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px 8px #888888;
+
+	}
+          
+
+	
+    .griditem2{
+	    background-color: rgb(149, 241, 112);
+        
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-radius: 20px;
+        text-align: center; 
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+        font-size: 50px;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px 8px #888888;
+
+
+	}
+      
+        
+	
+
+    .griditem3{
+	    background-color: rgb(42, 139, 143);
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-radius: 20px;
+        text-align: center; 
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px 8px #888888;
+       
+      
+	}
+
+    .griditem4{
+	    background-color: rgb(4, 85, 51);
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border-radius: 20px;
+        text-align: center; 
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: yellow;
+        font-size: 50px;
+        border: 1px solid;
+         padding: 10px;
+        box-shadow: 5px 10px 8px #888888;
+        
+
+	}
+
+    .griditem5{
+	    background-color: rgb(73, 85, 4);
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border-radius: 20px;
+        text-align: center; 
+        align-items:stretch;
+        height: 85px;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px 8px #888888;
+     
+    }
+    
+</style>
+
+<div class="grid-container">
+
+    <div class="grid-item griditem1">Forest</div>
+    <div class="grid-item griditem2">
+        <a href="Grid Assignment.html"> Layout 1</a>
+        </div>
+    <div class="grid-item griditem3"> <img src="https://st4.depositphotos.com/3200701/i/600/depositphotos_214796098-stock-photo-pine-trees-black-stylized-silhouette.jpg"></div>
+    <div class="grid-item griditem4">
+        <a href="Grid Assignment.html"> Layout 2</a></div>
+    <div class="grid-item griditem5">Footer</div>
+    
+    
+    
+</div>
+
+
+
+</div>
+</body>
+</html>
